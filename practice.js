@@ -18,8 +18,9 @@ var arr = [10,20,30];
 */
 
 //Code Here
-
-
+function first(arr){
+  return arr[0]
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -33,7 +34,9 @@ var arr = [40,50,60];
 */
 
 //Code Here
-
+function last(arr){
+  return arr[2]
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -49,8 +52,13 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 //Code Here
 
-
-
+function looper(family){
+  for (var i = 0; i < arr.length; i++) {
+    alert(family[i])
+  }
+  console.log(family)
+}
+//looper(family)
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
@@ -63,7 +71,13 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+function reversedLooper(letters){
+  for ( var i = arr.length -1; i >= 0; i-- ){
+    alert(letters[i] )
+  }
+  console.log(letters);
+}
+//reversedLooper(letters);
 
 
 ////////// PROBLEM 5 //////////
@@ -78,7 +92,15 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
-
+function evenFinder(nums) {
+for (var i = 0; i<nums.length; i ++){
+  if (nums[i] % 2 === 0){
+    evensFinder.push(arr[i]);
+   
+  }
+}
+return evensFinder
+}
 
 
 
@@ -106,8 +128,18 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
-
+function divider (numbersArray) {
+  let evensOdds = [[],[]]
+  for (var i = 0; i < numbersArray.length; i++){
+    if (numbersArray[i] % 2 === 0){
+      evensOdds[0].push(numbersArray[i])
+    } else if (numbersArray[i] %2 != 0){
+      evensOdds[1].push(numbersArray[i])
+    }
+  }
+  return evensOdds;
+}
+divider(numbersArray);
 
 ////////// PROBLEM 7 //////////
 
@@ -127,6 +159,13 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+function finder (array){
+  for (var i = 0; i < array.length; i++)
+    if (array[i] == getRandomArbitrary){
+    return array[i] = true
+  }
+  return array[i] = false
+}
 
 
 
@@ -156,7 +195,14 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function removeItem(myGroceryList, removedFromList){
+  for (var i = 0; i <array.length; i ++){
+    if (myGroceryList[i] === removedFromList){
+      myGroceryList.splice(removedFromList[i],1);
+    }
+  }
+  
+}
 
 
 ////////// PROBLEM 9 //////////
